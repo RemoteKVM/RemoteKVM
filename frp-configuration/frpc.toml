@@ -1,0 +1,10 @@
+[common]
+server_addr = {ip of the server with the static ip - for us it is the ip of remotekvm.online}
+server_port = 8888
+token = {a random token that is the same as in the frps.toml file}
+
+[web]
+type = "tcp"
+local_ip = "127.0.0.1"
+local_port = 7777
+remote_port = 2222

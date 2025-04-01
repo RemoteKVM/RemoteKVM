@@ -1,0 +1,338 @@
+/* Page Layout */
+.create-vm-page-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  overflow-y: auto; /* Change from overflow: hidden to overflow-y: auto */
+}
+
+/* Override TopMenu styles specifically for the create VM page */
+.create-vm-top-menu-wrapper .top-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.create-vm-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+  font-family: 'DM Sans', sans-serif;
+  padding-top: 80px; /* Space for TopMenu */
+  padding-bottom: 30px;
+}
+
+.create-vm-container {
+  width: 95%;
+  max-width: 800px;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+  padding: 20px 0;
+}
+
+.create-vm-container.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Header */
+.create-vm-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.back-to-dashboard {
+  background: none;
+  border: none;
+  color: #004346;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 15px;
+  padding: 6px 0;
+  transition: all 0.2s ease;
+}
+
+.back-to-dashboard:hover {
+  color: #09bc8a;
+}
+
+.create-vm-header h2 {
+  font-family: 'DM Sans', sans-serif;
+  color: #004346;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Form */
+.create-vm-form {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease, transform 0.5s ease;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #004346;
+  font-size: 1rem;
+}
+
+.form-group label svg {
+  margin-right: 6px;
+}
+
+.form-group input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Assistant', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus {
+  border-color: #09bc8a;
+  outline: none;
+}
+
+/* Range slider styling */
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.form-group input[type="range"] {
+  flex: 1;
+  -webkit-appearance: none;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 3px;
+}
+
+.form-group input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #09bc8a;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.disk-size-value {
+  font-weight: 600;
+  color: #09bc8a;
+  min-width: 60px;
+  text-align: center;
+}
+
+.form-group small {
+  display: block;
+  color: #777;
+  margin-top: 6px;
+  font-size: 0.85rem;
+}
+
+/* VM specs preview */
+.vm-specs-preview {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin: 25px 0;
+  border-left: 4px solid #09bc8a;
+}
+
+.vm-specs-preview h4 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #004346;
+  font-size: 1.1rem;
+}
+
+.spec-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.spec-item svg {
+  color: #09bc8a;
+}
+
+/* Create button */
+.create-vm-button {
+  width: 100%;
+  padding: 14px 16px;
+  margin-top: 15px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #09bc8a 0%, #004346 100%);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.create-vm-button:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.create-vm-button:not(:disabled):active {
+  transform: translateY(0);
+}
+
+.create-vm-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Button spinner */
+.button-spinner {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error message */
+.create-vm-error-message {
+  background-color: rgba(255, 82, 82, 0.1);
+  border-left: 4px solid #ff5252;
+  color: #d32f2f;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Success message */
+.create-vm-success-message {
+  background-color: rgba(62, 189, 136, 0.1);
+  border-left: 4px solid #3ebd88;
+  color: #09bc8a;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Animation classes */
+@keyframes shakeError {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+@keyframes successPulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(62, 189, 136, 0.7); }
+  70% { transform: scale(1.02); box-shadow: 0 0 0 15px rgba(62, 189, 136, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(62, 189, 136, 0); }
+}
+
+.create-vm-error {
+  animation: shakeError 0.5s ease-in-out;
+}
+
+.create-vm-success {
+  animation: successPulse 0.8s ease-in-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .create-vm-container {
+    width: 90%;
+  }
+  
+  .create-vm-form {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-vm-container {
+    width: 95%;
+  }
+  
+  .create-vm-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .slider-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .form-group input[type="range"] {
+    width: 100%;
+  }
+  
+  .disk-size-value {
+    align-self: center;
+  }
+}
+
+/* Add these styles to your existing CSS file  */
+.invalid-input {
+  border: 2px solid #f44336 !important;
+  background-color: rgba(244, 67, 54, 0.05) !important;
+}
+
+.input-error-message {
+  color: #f44336;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.input-error-message svg {
+  font-size: 0.85rem;
+}

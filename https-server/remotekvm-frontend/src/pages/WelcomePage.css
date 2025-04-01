@@ -1,0 +1,1056 @@
+/* Section General Styling */
+/* Make sure all sections stay within viewport width */
+.section {
+    width: 100%;
+    max-width: 100vw;
+    padding: 40px 0;
+    min-height: fit-content;
+    height: fit-content;
+    display: block;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling within sections */
+  }
+
+/* Section container styling */
+.section .container {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #000000ad;
+  color: #ffffff;
+  padding: 0px 0;
+}
+
+/* Hero Section */
+.remote-section {
+    background-color: #3ebd88;
+    color: #ffffff;
+    padding: 0px 0;
+}
+
+.credits-section {
+    background-color: #000000ad;
+    color: #ffffff;
+    padding: 0px 0;
+}
+
+.kvm-section {
+    background-color: #004346;
+    color: #ffffff;
+    padding: 0px 0;
+}
+
+.about-us-section {
+    background-color: #588992;
+    color: #ffffff;
+    padding: 0px 0;
+}
+
+.welcome-content-box {
+    background-color: #cfcfcf;
+    border-radius: 20px;
+    display: inline-block;     /* So it only wraps around its contents */
+    width: auto;              /* Or width: fit-content; if you prefer */
+    padding: 10px 20px;       /* Adjust as you wish */
+    margin: 20px auto;       
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+/* About text within hero section */
+.about-text {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin-top: 0px;
+  margin-bottom: 5px; 
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
+  text-align: left;
+  padding: 5px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+
+.container {
+    padding: 0 !important;
+    margin: 0 auto;
+}
+
+/* Title and subtitle container */
+.title-and-subtitle {
+    display: inline-block;
+    text-align: center;
+    width: fit-content;
+}
+/* Features Section */
+.features-section {
+  background-color: #f5f5f5;
+  color: #004346;
+}
+
+/* Call to Action Section */
+.cta-section {
+  background-color: #004346;
+  color: #ffffff;
+}
+
+.welcome-logo {
+    width: 25%;
+    max-width: 250px;
+    margin-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: 794 / 911; 
+    object-fit: contain; /* Ensures the image fits within the space */
+}
+
+.welcome-title {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 0px;
+    line-height: 0.75;
+    font-optical-sizing: none;
+    text-align: center; /* Ensure title is centered */
+}
+
+.font-optical-sizing-off {
+    font-optical-sizing: none;
+}
+
+@media (min-width: 768px) {
+  .welcome-title {
+    font-size: 7rem;
+  }
+}
+
+.light-green-text {
+  color: #09bc8a;
+}
+
+.dark-green-text {
+  color: #004346;
+}
+
+.blue-text {
+  color: #508991;
+}
+
+.created-by-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* No need to modify - already centered */
+  }
+  
+  .created-by {
+    font-size: 1.065rem;
+    font-weight: 700;
+    margin-top: 0px;
+    padding-top: 0px;
+    display: inline-block;
+    white-space: nowrap;
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 750;
+    line-height: 0.9;
+    margin-bottom: 10px;
+    text-align: center; /* Ensure text is centered */
+  }
+
+@media (min-width: 768px) {
+  .created-by {
+    font-size: 2.7rem;
+  }
+}
+
+.created-by span {
+  display: inline-block;
+  margin: 0 2px;
+}
+
+
+.welcome-buttons .btn-primary {
+  background-color: #09bc8a;
+  border-color: #09bc8a;
+}
+
+.welcome-buttons .btn-secondary {
+  background-color: #508991;
+  border-color: #508991;
+}
+
+.section h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #ffffff;
+  padding-top: 10px;
+
+}
+
+.hero-section p{
+    color: #c8c7c7;
+}
+
+.credits-section p{
+    color: #c8c7c7;
+}
+
+.features-section h2 {
+  color: #004346;
+}
+
+.cta-section h2 {
+  color: #09bc8a;
+}
+
+/* Terminal Animation Styles */
+.terminal-container {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.terminal-window {
+  width: 80%;
+  max-width: 600px;
+  background-color: #1e1e1e;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin: 0 auto 10px;
+}
+
+.terminal-header {
+  height: 30px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.terminal-close {
+  background-color: #ff5f56;
+}
+
+.terminal-minimize {
+  background-color: #ffbd2e;
+}
+
+.terminal-maximize {
+  background-color: #27c93f;
+}
+
+.terminal-title {
+  color: #aaa;
+  font-size: 12px;
+  margin-left: 10px;
+  font-family: monospace;
+}
+
+.terminal-content {
+  padding: 15px;
+  font-family: 'Consolas', 'Courier New', monospace;
+  color: #ddd;
+  text-align: left;
+}
+
+.terminal-line {
+  margin: 6px 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* Terminal Animation Styles - Updated cursor timing */
+
+/* ...existing terminal styles... */
+
+/* Updated animation classes with modified timing */
+.terminal-visible .terminal-typing {
+  animation: typing 2s steps(30) forwards;
+  width: 0;
+}
+
+.terminal-visible .terminal-response {
+  color: #3ebd88;
+  animation: fadeIn 1s forwards;
+  opacity: 0;
+  animation-delay: 2.5s; 
+}
+
+.terminal-visible .terminal-cursor {
+  position: relative;
+  opacity: 0; /* Start hidden */
+  animation: cursorFadeIn 0.5s forwards;
+  animation-delay: 3.6s; /* 2.5s (response delay) + 1s (response animation) + 0.1s (extra delay) */
+}
+
+.terminal-visible .terminal-cursor::after {
+  content: "■";
+  animation: cursor 1s infinite;
+  position: relative;
+  color: white;
+}
+
+/* Don't animate unless visible */
+.terminal-typing:not(.terminal-visible) {
+  width: 0;
+}
+
+.terminal-response:not(.terminal-visible) {
+  opacity: 0;
+}
+
+.terminal-cursor:not(.terminal-visible) {
+  opacity: 0;
+}
+
+@keyframes cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes cursorFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* KVM Hypervisor Visualization Styles */
+.hypervisor-container {
+  display: flex;
+  justify-content: center;
+  margin: 0px 0;
+  perspective: 1000px;
+}
+
+.hypervisor-visualization {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+/* Laptop styling */
+.laptop {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(10deg);
+}
+
+.laptop-screen {
+  position: relative;
+  height: 0;
+  padding-bottom: 55%;
+  background-color: #222;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border: 10px solid #333;
+  border-bottom: 15px solid #333;
+}
+
+.laptop-screen-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 30px 10px 10px;
+}
+
+.laptop-base {
+  height: 15px;
+  background-color: #333;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+  transform: perspective(500px) rotateX(-5deg);
+  transform-origin: top;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.laptop-keyboard {
+  width: 80%;
+  height: 8px;
+  background: linear-gradient(90deg, #444 2px, #333 2px);
+  background-size: 8px 100%;
+  border-radius: 2px;
+  margin: 3px auto;
+}
+
+.laptop-touchpad {
+  width: 20%;
+  height: 5px;
+  background-color: #444;
+  border-radius: 3px;
+  margin: 2px auto;
+  position: relative;
+}
+
+.laptop-touchpad::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10%;
+  height: 2px;
+  background-color: #555;
+  border-radius: 1px;
+}
+
+.laptop-camera {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #222;
+  border-radius: 50%;
+  border: 1px solid #444;
+  z-index: 10;
+}
+
+.hypervisor-label {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #09bc8a;
+  color: #004346;
+  font-weight: bold;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 14px;
+  padding: 3px 8px;
+  z-index: 10;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+/* Virtual Machine styling */
+.vm-container {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  margin-top: 15px;
+}
+
+.vm {
+    width: 30%;
+    height: 85%;
+    background-color: #0d1117;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(20px);
+    opacity: 0; /* Initial state when not visible */
+} 
+
+.vm-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  height: 20px;
+  background-color: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+
+.vm-label {
+  padding-top: 5px;
+  color: white;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.vm-status-light {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #555;
+}
+
+/* Terminal styling */
+.vm-terminal {
+  padding: 8px;
+  height: calc(100% - 28px);
+  overflow: hidden;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 9px;
+  color: #33ff33;
+  line-height: 1.4;
+  background-color: #000a04;
+  position: relative;
+}
+
+.vm-continuous-text {
+    position: absolute;
+    padding: 8px;
+    width: calc(100% - 16px);
+    opacity: 1; /* Make text visible by default */
+}
+
+/* Update scrolling classes to work with hypervisor-visible */
+.hypervisor-visible .vm-scrolling1 {
+    animation: scrollTerminal1 20s linear infinite;
+    animation-delay: 0.6s; /* Match VM appearance */
+  }
+  
+  .hypervisor-visible .vm-scrolling2 {
+    animation: scrollTerminal2 25s linear infinite;
+    animation-delay: 0.8s; /* Match VM appearance */
+  }
+  
+  .hypervisor-visible .vm-scrolling3 {
+    animation: scrollTerminal3 22s linear infinite;
+    animation-delay: 1s; /* Match VM appearance */
+  }
+  
+  /* Remove the regular vm-scrolling classes without hypervisor-visible */
+  .vm-scrolling1, .vm-scrolling2, .vm-scrolling3 {
+    /* No animation until hypervisor is visible */
+    animation: none;
+  }
+/* Update the scrolling animations to be smoother */
+@keyframes scrollTerminal1 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-33.33%); /* Exactly one-third of content height */
+  }
+}
+
+@keyframes scrollTerminal2 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-33.33%);
+  }
+}
+
+@keyframes scrollTerminal3 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-33.33%);
+  }
+}
+
+/* Make animations smoother and slower */
+.hypervisor-visible .vm-scrolling1 {
+  animation: scrollTerminal1 30s linear infinite;
+  animation-delay: 0.6s; /* Match VM appearance */
+}
+
+.hypervisor-visible .vm-scrolling2 {
+  animation: scrollTerminal2 35s linear infinite;
+  animation-delay: 0.8s; /* Match VM appearance */
+}
+
+.hypervisor-visible .vm-scrolling3 {
+  animation: scrollTerminal3 32s linear infinite;
+  animation-delay: 1s; /* Match VM appearance */
+}
+
+.vm-terminal-line {
+  margin: 4px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Animation classes for hypervisor visibility */
+.hypervisor-visible .vm-container {
+  animation: fadeIn 0.5s ease-in forwards;
+  animation-delay: 0.3s;
+}
+
+.hypervisor-visible .vm1 {
+  animation: vmAppear 0.5s ease-out forwards, vmPulse 3s infinite;
+  animation-delay: 0.6s, 1.2s;
+  border-color: #09bc8a;
+}
+
+.hypervisor-visible .vm2 {
+  animation: vmAppear 0.5s ease-out forwards, vmPulse 3s infinite;
+  animation-delay: 0.8s, 1.4s;
+  border-color: #508991;
+}
+
+.hypervisor-visible .vm3 {
+  animation: vmAppear 0.5s ease-out forwards, vmPulse 3s infinite;
+  animation-delay: 1s, 1.6s;
+  border-color: #3ebd88;
+}
+
+.hypervisor-visible .vm1 .vm-status-light {
+  animation: statusBlink 1.5s infinite;
+  background-color: #09bc8a;
+  animation-delay: 1.2s;
+}
+
+.hypervisor-visible .vm2 .vm-status-light {
+  animation: statusBlink 1.5s infinite;
+  background-color: #508991;
+  animation-delay: 1.4s;
+}
+
+.hypervisor-visible .vm3 .vm-status-light {
+  animation: statusBlink 1.5s infinite;
+  background-color: #3ebd88;
+  animation-delay: 1.6s;
+}
+
+/* Keyframe animations */
+@keyframes vmAppear {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes vmPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(9, 188, 138, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 5px 1px rgba(9, 188, 138, 0.4);
+  }
+}
+
+@keyframes statusBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Fixed duplicate declarations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .vm-label {
+    font-size: 8px;
+  }
+  
+  .hypervisor-label {
+    font-size: 12px;
+  }
+  
+  .vm-terminal {
+    font-size: 7px;
+    padding: 5px;
+  }
+  
+  .vm-terminal-line {
+    margin: 2px 0;
+  }
+  
+  .vm-continuous-text {
+    padding: 5px;
+    width: calc(100% - 10px);
+  }
+}
+
+
+
+/* Team Section Styles */
+.team-section {
+  padding: 0 !important;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.team-member {
+  width: 50%;
+  padding: 30px 20px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+}
+
+.liron-section {
+  background-color: #004346; /* Dark green to match theme */
+}
+
+.omer-section {
+  background-color: #09bc8a; /* Light green to match theme */
+}
+
+.team-member h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.team-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.member-initials {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.member-details {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.member-details p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+  }
+  
+  .team-member {
+    width: 100%;
+  }
+  
+  .team-content {
+    flex-direction: column;
+  }
+  
+  .member-image-placeholder {
+    margin-bottom: 15px;
+  }
+
+  .about-text {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .member-details {
+    text-align: left;
+  }
+
+  .resources-buttons {
+    width: 90%;
+    justify-content: center;
+  }
+}
+
+/* Make Font Awesome icons larger */
+.contact-link .svg-inline--fa {
+    font-size: 1.2rem; /* Increased icon size */
+    margin-right: 0px;
+  }
+
+/* Update to Team Section Styles */
+
+/* Replace the member-image-placeholder with member-image */
+.member-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-contact {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+  transform: translateX(5px);
+}
+
+.liron-section .contact-link:hover {
+  color: #09bc8a;
+}
+
+.omer-section .contact-link:hover {
+  color: #004346;
+}
+
+/* Update responsive styling */
+@media (max-width: 768px) {
+  .member-image {
+    margin-bottom: 15px;
+  }
+  
+  .member-contact {
+    align-items: center;
+    margin-top: 10px;
+  }
+}
+
+/* Team photo styling in About Us section */
+.team-photo-container {
+    max-width: 800px;
+    width: 80%;
+    margin: 20px auto 10px;
+    overflow: hidden;
+  }
+  
+  .team-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .team-photo-container {
+      width: 90%;
+      margin: 15px auto 20px;
+    }
+    
+    .team-photo {
+      border-radius: 10px;
+      border-width: 3px;
+    }
+  }
+
+
+  /* Project Resources Section */
+.resources-section {
+  background-color: #588992;
+  color: #ffffff;
+  padding: 0px 0;
+}
+
+.resources-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.resource-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, var(--light-green) 0%, var(--dark-green) 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resource-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+.resource-link i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.resources-description {
+  max-width: 700px;
+  margin: 1.5rem auto 0;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .resources-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.resources-buttons {
+  margin: 10px
+}
+
+@keyframes headerPop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes headerPoph3 {
+    0% {
+      transform: scale(1) translateX(0);
+    }
+    50% {
+      transform: scale(1.15) translateX(60px); /* Scale up and move right */
+    }
+    100% {
+      transform: scale(1) translateX(0);
+    }
+  }
+
+.section-header-highlight {
+  animation: headerPop 1.5s ease;
+}
+
+.section-header-highlight-h3{
+    animation: headerPoph3 1.5s ease !important;
+  }
+
+.section h2.section-header-highlight {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+.remote-section h2.section-header-highlight {
+  text-shadow: 0 0 15px rgba(9, 188, 138, 0.7);
+}
+
+.kvm-section h2.section-header-highlight {
+  text-shadow: 0 0 15px rgba(0, 67, 70, 0.7);
+}
+
+.section h3.section-header-highlight {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+  }
+  
+  .remote-section h3.section-header-highlight {
+    text-shadow: 0 0 15px rgba(9, 188, 138, 0.7);
+  }
+  
+  .kvm-section h3.section-header-highlight {
+    text-shadow: 0 0 15px rgba(0, 67, 70, 0.7);
+  }
+/* Logo hover effects */
+.welcome-logo {
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+/* When hovering the logo, only the interactive title elements become transparent */
+.welcome-logo:hover + .title-and-subtitle .interactive-title,
+.welcome-logo:hover + .title-and-subtitle .interactive-subtitle {
+  opacity: 0.2;
+}
+
+/* When hovering the logo, it stays at full opacity */
+.welcome-logo:hover {
+  opacity: 1;
+}
+
+/* When hovering the content box but not specifically the logo */
+.welcome-content-box:hover .welcome-logo:not(:hover),
+.welcome-content-box:hover .interactive-title,
+.welcome-content-box:hover .interactive-subtitle {
+  opacity: 0.2;
+}
+
+/* Interactive title elements */
+.interactive-title, .interactive-subtitle {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+/* When hovering a specific element, make it fully opaque and scale it */
+.interactive-title:hover, .interactive-subtitle:hover {
+  transform: scale(1.01);
+  opacity: 1 !important;
+}
+
+/* Remove all underline effects */
+.interactive-title:after {
+  content: none !important;
+}
+
+
+.welcome-title:hover .interactive-title:hover {
+  opacity: 1 !important;
+}
+
+/* When any subtitle is hovered, dim the others */
+.created-by:hover .interactive-subtitle {
+  opacity: 0.5;
+}
+
+.created-by:hover .interactive-subtitle:hover {
+  opacity: 1 !important;
+}

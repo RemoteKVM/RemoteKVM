@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "g++ build active file",
+            "type": "shell",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "*.cpp",
+                "-o",
+                "ssh_server",
+                "-lgmpxx",
+                "-lgmp",
+                "-lpthread",
+                "-lcrypto",
+                "-lcurl",
+                "-lssl"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Generated task by Debugger."
+        }
+    ]
+}
